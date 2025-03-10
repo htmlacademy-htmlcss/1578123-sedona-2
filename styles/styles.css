@@ -14,13 +14,36 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100vh;
+  margin-inline: auto;
+  background-color: #ffffff;
 }
 
 .button {
@@ -35,11 +58,44 @@ body {
   background-color: transparent;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 /* Pages-header */
 
 .page-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding-inline: 70px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.site-logo-image {
+  width: 140px;
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  margin-right: auto
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -53,7 +109,11 @@ body {
 }
 
 .navigation-badge {
+  font-size: 10px;
+  text-align: center;
+  line-height: 10px;
   color: #ffffff;
+  background-color: #7db54f;
 }
 
 /* Buttons */
@@ -78,6 +138,10 @@ body {
 
 /* Main */
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   background-color: #ffffff;
   color: #000000;
@@ -87,11 +151,16 @@ body {
 
 .hero {
   background-color: #a1a0a0;
-  background-image: url("../images/divider.png"), url("../images/background-1.jpg");
+  background-image: url("../images/divider.svg"), url("../images/background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
-  background-position: left bottom, left top;
-  text-align: center;
+  background-position: center bottom, center;
+}
+
+.hero-image {
+  display: block;
+  width: 458px;
+  margin-inline: auto;
 }
 
 /* Advantages */
@@ -115,8 +184,26 @@ body {
   color: #333333;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 .advantages-item {
+  display: flex;
+  width: 400px;
   background-color: #83B3D31F;
+}
+
+.advantages-item-reversed {
+  flex-direction: row-reverse;
+}
+
+.advantages-text {
+  width: 400px;
 }
 
 .advantages-text-title {
@@ -128,10 +215,13 @@ body {
 }
 
 .advantages-text-description {
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
 .advantages-item.imaged {
+  width: 1200px;
   color: #ffffff;
   background-color: #82B3D3;
 }
@@ -150,7 +240,7 @@ body {
 
 .advantages-image {
   display: block;
-  margin: 0 auto;
+  width: 800px;
 }
 
 /* Services */
@@ -158,6 +248,18 @@ body {
 .service {
   background-color: #ffffff;
   text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.service-item {
+  width: 400px;
 }
 
 .service-item.light {
@@ -226,6 +328,8 @@ body {
 /* Subscribe */
 
 .subscribe {
+  display: flex;
+  justify-content: center;
   background-color: #ffffff;
   text-align: center;
   color: #333333;
@@ -258,6 +362,7 @@ body {
 }
 
 .subscribe-input {
+  min-width: 452px;
   color: #000000;
   font-weight: 400;
   font-size: 18px;
@@ -266,6 +371,7 @@ body {
 }
 
 .subscribe-button {
+  min-width: 232px;
   font-size: 20px;
   line-height: 36px;
   border-top-right-radius: 4px;
@@ -277,6 +383,10 @@ body {
 /* Page-footer */
 
 .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding-inline: 70px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -285,6 +395,11 @@ body {
   font-family: inherit;
   color: #000000;
   font-weight: 400;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
 }
 
 .social-link {
@@ -312,6 +427,10 @@ body {
   background-size: cover;
 }
 
+.contacts-address {
+  margin-inline: auto;
+}
+
 .contacts-phone {
   font-family: inherit;
   font-size: 40px;
@@ -323,7 +442,8 @@ body {
   text-decoration: none;
 }
 
-.footer-logo {
+.site-author {
+  width: 115px;
   background-image: url("../images/htmlacademy.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -344,9 +464,11 @@ body {
 /* Catalog-filter */
 
 .catalog-filter {
+  padding-inline: 70px;
   background-color: #a1a0a0;
   color: #ffffff;
   background-image: url("../images/background-3.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -358,6 +480,12 @@ body {
 }
 
 /* Breadcrumbs */
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
 .breadcrumbs-link {
   font-family: inherit;
@@ -371,7 +499,15 @@ body {
 /* Catalog-filter-form */
 
 .catalog-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
   color: #ffffff;
+}
+
+.form-filter-list {
+  margin: 0;
+  padding: 0;
 }
 
 .form-filter-title {
@@ -409,15 +545,30 @@ body {
 
 /* Catalog-results */
 
+.catalog-results {
+  display: grid;
+  grid-template-areas:
+    "heading select view"
+    "catalog catalog catalog"
+    "pagination pagination pagination";
+  grid-template-columns: 1fr auto auto;
+  column-gap: 70px;
+  padding-inline: 70px;
+}
+
 .catalog-results-title {
+  grid-area: heading;
   color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .select-control {
+  min-width: 292px;
+  grid-area: select;
   font-family: inherit;
   color: #333333;
   font-size: 18px;
@@ -427,17 +578,33 @@ body {
 }
 
 .catalog-view-list {
+  display: flex;
+  grid-area: view;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
   background-color: #E5E5E5;
 }
 
 /* Result-card */
 
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  grid-area: catalog;
+  margin: 0;
+  padding: 0;
+}
+
 .result-card {
+  width: 340px;
   background-color: #E6E6E6;
 }
 
 .card-image {
   display: block;
+  width: 300px;
 }
 
 .card-link {
@@ -481,6 +648,15 @@ body {
 }
 
 /* Pagination */
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  grid-area: pagination;
+  margin: 0;
+  padding: 0;
+}
 
 .pagination-link {
   font-family: inherit;
