@@ -14,15 +14,8 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   color: #333333;
@@ -44,6 +37,7 @@ img {
   min-height: 100vh;
   margin-inline: auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -68,7 +62,7 @@ img {
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  column-gap: 28px;
   padding-inline: 70px;
   color: #000000;
   background-color: #ffffff;
@@ -84,7 +78,6 @@ img {
   flex-wrap: wrap;
   gap: 28px;
   flex-grow: 1;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -138,7 +131,7 @@ img {
 
 /* Main */
 
-.main-container {
+main {
   flex-grow: 1;
 }
 
@@ -328,8 +321,6 @@ img {
 /* Subscribe */
 
 .subscribe {
-  display: flex;
-  justify-content: center;
   background-color: #ffffff;
   text-align: center;
   color: #333333;
@@ -361,8 +352,21 @@ img {
   line-height: 26px;
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-control {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
+  opacity: 0.6;
+}
+
 .subscribe-input {
   min-width: 452px;
+  font-family: inherit;
   color: #000000;
   font-weight: 400;
   font-size: 18px;
@@ -444,14 +448,6 @@ img {
 
 .site-author {
   width: 115px;
-  background-image: url("../images/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #a1a0a0;
-  text-decoration: none;
-  font-style: inherit;
-  font-weight: 400;
-  color: #000000;
 }
 
 /* Catalog */
@@ -477,6 +473,8 @@ img {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 /* Breadcrumbs */
@@ -514,6 +512,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .form-filter-control {
@@ -521,11 +520,14 @@ img {
   line-height: 23px;
 }
 
-.form-filter-input {
-  background-color: #FFFFFF;
+.form-filter-control-text {
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: lowercase;
+  opacity: 0.3;
 }
 
-.form-filter-range-input {
+.form-filter-input {
   background-color: #f2f2f2;
   color: #000000;
   font-family: inherit;
@@ -574,7 +576,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
 }
 
 .catalog-view-list {
@@ -586,6 +588,10 @@ img {
   background-color: #E5E5E5;
 }
 
+.view-button {
+  background-color: #ffffff;
+}
+
 /* Result-card */
 
 .result-list {
@@ -595,11 +601,12 @@ img {
   grid-area: catalog;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .result-card {
   width: 340px;
-  background-color: #E6E6E6;
+  background-color: #ffffff;
 }
 
 .card-image {
@@ -656,6 +663,7 @@ img {
   grid-area: pagination;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .pagination-link {
