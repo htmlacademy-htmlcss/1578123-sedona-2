@@ -26,18 +26,18 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item navigation-user-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-user-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="navigation-badge">12</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-user-item">
               <a class="navigation-link button button-primary nav-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -54,7 +54,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -97,11 +97,11 @@
               <legend class="form-filter-title">Стоимость, ₽:</legend>
               <label class="form-filter-control">
                 <span class="form-filter-control-text">От</span>
-                <input class="form-filter-input" type="number" id="min-cost" name="min-cost" min="0" max="12000" step="1" value="0" />
+                <input class="form-filter-input-cost" type="number" id="min-cost" name="min-cost" min="0" max="12000" step="1" value="0" />
               </label>
               <label class="form-filter-control">
                 <span class="form-filter-control-text">До</span>
-                <input class="form-filter-input" type="number" id="max-cost" name="max-cost" min="0" max="12000" step="1" value="9000" />
+                <input class="form-filter-input-cost" type="number" id="max-cost" name="max-cost" min="0" max="12000" step="1" value="9000" />
               </label>
             </fieldset>
             <div class="form-filter-buttons">

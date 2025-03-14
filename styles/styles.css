@@ -68,6 +68,11 @@ img {
   background-color: #ffffff;
 }
 
+.site-logo {
+  display: block;
+  flex-shrink: 0;
+}
+
 .site-logo-image {
   width: 140px;
   display: block;
@@ -76,22 +81,22 @@ img {
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  column-gap: 28px;
   flex-grow: 1;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-right: auto
-}
-
-.navigation-user {
-  margin: 0;
-  padding: 0;
+  margin-right: auto;
+  list-style: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   color: inherit;
   font-size: 20px;
   line-height: 24px;
@@ -101,7 +106,36 @@ img {
   background-color: #ffffff;
 }
 
+.navigation-link:not(.button) {
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 22px 12px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user-item {
+  flex-shrink: 0;
+}
+
+.navigation-user-item:has(.button) {
+  margin-left: 20px;
+}
+
 .navigation-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+  min-width: 20px;
   font-size: 10px;
   text-align: center;
   line-height: 10px;
@@ -143,6 +177,7 @@ main {
 /* Hero */
 
 .hero {
+  padding-block: 51px 82px;
   background-color: #a1a0a0;
   background-image: url("../images/divider.svg"), url("../images/background-1.jpg");
   background-repeat: no-repeat;
@@ -159,11 +194,15 @@ main {
 /* Advantages */
 
 .advantages {
+  padding-top: 69px;
   background-color: #ffffff;
   text-align: center;
 }
 
 .advantages-lead {
+  max-width: 700px;
+  margin: 0;
+  margin-inline: auto;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -172,9 +211,20 @@ main {
 }
 
 .advantages-description {
+  max-width: 700px;
+  margin: 0;
+  margin-inline: auto;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.advantages .advantages-lead {
+  margin-bottom: 25px;
+}
+
+.advantages .advantages-description {
+  margin-bottom: 69px;
 }
 
 .advantages-list {
@@ -189,6 +239,7 @@ main {
   display: flex;
   width: 400px;
   background-color: #83B3D31F;
+  min-height: 385px;
 }
 
 .advantages-item-reversed {
