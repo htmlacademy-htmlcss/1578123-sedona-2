@@ -25,20 +25,20 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-list navigation-user-list">
             <li class="navigation-item navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-user-link navigation-user-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-user-link navigation-user-link-fav" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="navigation-badge">12</span>
               </a>
             </li>
             <li class="navigation-item navigation-user-item">
-              <a class="navigation-link button button-primary nav-button" href="#">Хочу сюда!</a>
+              <a class="navigation-link navigation-user-link button button-primary nav-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -93,15 +93,15 @@
           <p class="service-promo">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
           <p class="service-about">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
-            <li class="service-item dark">
+            <li class="service-item dark service-item-hotel">
               <h3 class="service-title">Жильё</h3>
               <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="service-item light">
+            <li class="service-item light service-item-food">
               <h3 class="service-title">Еда</h3>
               <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="service-item dark">
+            <li class="service-item dark service-item-souvenir">
               <h3 class="service-title">Сувениры</h3>
               <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -115,9 +115,9 @@
         </section>
         <section class="subscribe subscribe-illustrative" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-control" for="subscribe-email">Введите Ваш e-mail для подписки</label>
+            <label class="subscribe-control visually-hidden" for="subscribe-email">Введите Ваш e-mail для подписки</label>
             <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required />
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
