@@ -60,6 +60,11 @@ img {
   box-sizing: border-box;
 }
 
+.button:disabled {
+  pointer-events: none;
+  background-color: #e5e5e5;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -77,16 +82,15 @@ img {
 }
 
 .site-logo {
-  display: block;
   position: relative;
+  display: block;
+  z-index: 1;
   flex-shrink: 0;
   width: 140px;
 }
 
 .site-logo-image {
   width: 100%;
-  position: relative;
-  z-index: 1;
   margin-bottom: -6px;
   display: block;
 }
@@ -120,6 +124,7 @@ img {
   background-color: #ffffff;
 }
 
+.navigation-link:hover::after,
 .navigation-link[aria-current="page"]::after {
   content: "";
   position: absolute;
@@ -205,18 +210,63 @@ img {
   color: #ffffff;
 }
 
+.button-primary:hover, .button-primary:focus-visible {
+  background-color: #615048;
+}
+
+.button-primary:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button-secondary {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.button-secondary:hover, .button-secondary:focus-visible {
+  background-color: #68a2ca;
+}
+
+.button-secondary:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-selected {
+  color: #ffffff;
+  background-color: #7db54f;
+}
+
+.button-selected:hover, .button-selected:focus-visible {
+  background-color: #6c9e42
+}
+
+.button-selected:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
+}
+
+.button-transparent:hover {
+  opacity: 0.6;
+}
+
+.button-transparent:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.button-transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-transparent:disabled {
+  pointer-events: none;
+  opacity: 0.1;
+}
+
 .nav-button {
   font-size: 16px;
   line-height: 20px;
-}
-
-.card-fav {
-  background-color: #82B3D3;
-  padding-block: 8px;
-}
-
-.fav-added {
-  background-color: #7DB54F;
 }
 
 /* Main */
@@ -565,6 +615,15 @@ main {
   box-sizing: border-box;
 }
 
+.subscribe-input:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-input:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
@@ -612,6 +671,15 @@ main {
   width: 47px;
   height: 40px;
   color: #83b3d3;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  background-color: #68a2ca;
+}
+
+.social-link:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .social-link::before {
