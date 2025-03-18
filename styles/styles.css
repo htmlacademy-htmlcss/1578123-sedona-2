@@ -547,6 +547,7 @@ main {
 }
 
 .search-button {
+  min-width: 376px;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
