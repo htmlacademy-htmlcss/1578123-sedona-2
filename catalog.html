@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона - Каталог</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon.png">
+    <script src="scripts/app.js" defer></script>
   </head>
 
   <body>
@@ -38,7 +41,7 @@
               </a>
             </li>
             <li class="navigation-item navigation-user-item">
-              <a class="navigation-link navigation-user-link button button-primary nav-button" href="#" disabled>Хочу сюда!</a>
+              <a class="navigation-link navigation-user-link button button-primary nav-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -63,16 +66,16 @@
               <ul class="form-filter-list">
                 <li class="form-filter-item">
                   <input class="form-filter-input" type="checkbox" id="pool-checkbox" name="pool-checkbox" checked />
-                  <label class="form-filter-control form-filter-control-box" for="pool-checkbox">Бассейн</label>
+                  <label class="form-filter-control" for="pool-checkbox">Бассейн</label>
                 </li>
                 <li class="form-filter-item">
                   <input class="form-filter-input" type="checkbox" id="parking-checkbox" name="parking-checkbox"
                     checked />
-                  <label class="form-filter-control form-filter-control-box" for="parking-checkbox">Парковка</label>
+                  <label class="form-filter-control" for="parking-checkbox">Парковка</label>
                 </li>
                 <li class="form-filter-item">
                   <input class="form-filter-input" type="checkbox" id="wifi-checkbox" name="wifi-checkbox" />
-                  <label class="form-filter-control form-filter-control-box" for="wifi-checkbox">Wi-Fi</label>
+                  <label class="form-filter-control" for="wifi-checkbox">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -81,15 +84,15 @@
               <ul class="form-filter-list">
                 <li class="form-filter-item">
                   <input class="form-filter-input" type="radio" id="hotel-radio" name="house-group" checked />
-                  <label class="form-filter-control form-filter-control-radio" for="hotel-radio">Гостиница</label>
+                  <label class="form-filter-control" for="hotel-radio">Гостиница</label>
                 </li>
                 <li class="form-filter-item">
                   <input class="form-filter-input" type="radio" id="motel-radio" name="house-group" />
-                  <label class="form-filter-control form-filter-control-radio" for="motel-radio">Мотель</label>
+                  <label class="form-filter-control" for="motel-radio">Мотель</label>
                 </li>
                 <li class="form-filter-item">
                   <input class="form-filter-input" type="radio" id="aparts-radio" name="house-group" />
-                  <label class="form-filter-control form-filter-control-radio" for="aparts-radio">Апартаменты</label>
+                  <label class="form-filter-control" for="aparts-radio">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -98,13 +101,25 @@
               <p class="form-filter-range-group">
                 <label class="form-filter-range-control">
                   <span class="form-filter-range-text">От</span>
-                  <input class="form-filter-range-input form-filter-range-input-min" type="number" id="min-cost" name="min-cost" min="0" max="12000" step="1" value="0">
+                  <input class="form-filter-range-input form-filter-range-input-min" type="number" id="min-cost" name="min-cost" min="0" max="12000" step="1" value="0" placeholder="0">
                 </label>
                 <label class="form-filter-range-control">
                   <span class="form-filter-range-text">До</span>
-                  <input class="form-filter-range-input form-filter-range-input-max" type="number" id="min-cost" name="min-cost" min="0" max="12000" step="1" value="9000">
+                  <input class="form-filter-range-input form-filter-range-input-max" type="number" id="min-cost" name="min-cost" min="0" max="12000" step="1" value="9000" placeholder="12000">
                 </label>
               </p>
+              <div class="form-filter-range-slider range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle range-toggle-min" type="button">
+                      <span class="visually-hidden">Изменение минимальной цены</span>
+                    </button>
+                    <button class="range-toggle range-toggle-max" type="button">
+                      <span class="visually-hidden">Изменение максимальной цены</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="form-filter-buttons">
               <button class="form-filter-button button button-secondary filter-button-apply" type="submit">Применить</button>
@@ -227,8 +242,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-control visually-hidden" for="subscribe-email">Введите Ваш e-mail для подписки</label>
-            <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required />
+            <label class="subscribe-control" for="subscribe-email">Ваш e-mail</label>
+            <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="example@domain.com" required />
             <button class="button button-secondary subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
