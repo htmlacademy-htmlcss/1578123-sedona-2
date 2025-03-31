@@ -147,6 +147,10 @@ img {
   background-color: #756257;
 }
 
+.navigation-link:focus-visible {
+  outline-offset: -2px;
+}
+
 .navigation-user-list {
   display: flex;
   flex-wrap: wrap;
@@ -1450,7 +1454,6 @@ main {
 .pagination-link {
   display: block;
   min-width: 60px;
-  max-width: 240px;
   padding: 12px 18px;
   font-family: inherit;
   font-size: 20px;
