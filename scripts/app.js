@@ -5,8 +5,8 @@ const toggleLabel = () => {
   const input = document.getElementById("subscribe-email"),
         label = document.querySelector("label[for='subscribe-email']");
 
-  const hideLabel = () => label.classList.remove("visually-hidden");
-  const showLabel = () => label.classList.add("visually-hidden");
+  const hideLabel = () => label.classList.add("visually-hidden");
+  const showLabel = () => label.classList.remove("visually-hidden");
 
   input.addEventListener("focusin", hideLabel);
   input.addEventListener("focusout", () => {
@@ -27,8 +27,15 @@ const toggleModal = () => {
 
   if (!searchButton || !modal || !modalCloseButton) return;
 
-  const openModal = ()  => modal.classList.remove("modal-container-closed");
-  const closeModal = () => modal.classList.add("modal-container-closed");
+  const openModal = ()  => {
+    modal.classList.remove("modal-container-closed");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    modal.classList.add("modal-container-closed");
+    document.body.style.overflow = "";
+  };
 
   searchButton.addEventListener("click", openModal);
   modalCloseButton.addEventListener("click", closeModal);
