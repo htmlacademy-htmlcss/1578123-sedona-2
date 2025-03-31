@@ -1649,6 +1649,7 @@ main {
   background-color: #333333;
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
 .tooltip-button:hover + .tooltip-text,
@@ -1659,12 +1660,12 @@ main {
 .tooltip-text::after {
   content: "";
   position: absolute;
-  width: 19px;
-  height: 9px;
-  margin-inline: auto;
   right: 0;
   bottom: 100%;
   left: 0;
+  width: 19px;
+  height: 9px;
+  margin-inline: auto;
   background-image: url("../images/decor/arrow-tooltip.svg");
   background-position: center;
   background-repeat: no-repeat;
