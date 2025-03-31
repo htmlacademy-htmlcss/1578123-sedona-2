@@ -91,22 +91,22 @@
             </li>
           </ul>
         </section>
-        <section class="service">
+        <section class="service" data-test="service">
           <h2 class="visually-hidden">Услуги</h2>
           <p class="service-promo">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
           <p class="service-about">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
             <li class="service-item dark service-item-hotel">
               <h3 class="service-title">Жильё</h3>
-              <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="service-description">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
             </li>
             <li class="service-item light service-item-food">
               <h3 class="service-title">Еда</h3>
-              <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="service-item dark service-item-souvenir">
               <h3 class="service-title">Сувениры</h3>
-              <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="service-description">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -119,8 +119,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-control" for="subscribe-email">Ваш e-mail</label>
             <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="example@domain.com" required />
+            <label class="subscribe-control" for="subscribe-email">Ваш e-mail</label>
             <button class="button button-secondary subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -160,9 +160,6 @@
       <!-- Модальное окно -->
       <div class="modal-container modal-container-closed">
         <div class="modal modal-search">
-          <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть модальное окно</span>
-          </button>
           <section class="modal-content">
             <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -177,7 +174,6 @@
                 <span class="search-form-message">На эти даты есть свободные номера. Пока есть.</span>
               </fieldset>
               <div class="search-form-group-half">
-                <label class="search-form-label" for="adults">Взрослые:</label>
                 <div class="search-form-step step">
                   <button class="step-button step-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить количество взрослых мест</span>
@@ -187,14 +183,14 @@
                     <span class="visually-hidden">Увеличить количество взрослых мест</span>
                   </button>
                 </div>
+                <label class="search-form-label" for="adults">Взрослые:</label>
               </div>
               <div class="search-form-group-half">
-                <label class="search-form-label" for="kids">Дети:</label>
                 <span class="search-form-tooltip tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-kids">
                     <span class="visually-hidden">Показать дополнительную информацию</span>
                   </button>
-                  <span class="tooltip-text" id="tooltip-label-kids" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  <span class="tooltip-text" id="tooltip-label-kids" role="tooltip">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно. </span>
                 </span>
                 <div class="search-form-step step">
                   <button class="step-button step-button-minus" type="button">
@@ -205,10 +201,14 @@
                     <span class="visually-hidden">Увеличить количество детских мест</span>
                   </button>
                 </div>
+                <label class="search-form-label" for="kids">Дети:</label>
               </div>
               <button class="search-form-button button button-secondary" type="submit">Найти</button>
             </form>
           </section>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
         </div>
       </div>
     </div>

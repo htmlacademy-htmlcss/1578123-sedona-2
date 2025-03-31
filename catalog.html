@@ -48,7 +48,7 @@
       </header>
 
       <main class="main-catalog" data-test="main">
-        <div class="catalog-filter" data-test="filter">
+        <div class="catalog-filter">
           <h1 class="catalog-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -60,7 +60,7 @@
               <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="form-filter-group">
               <legend class="form-filter-title">Инфраструктура:</legend>
               <ul class="form-filter-list">
@@ -242,8 +242,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-control" for="subscribe-email">Ваш e-mail</label>
             <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="example@domain.com" required />
+            <label class="subscribe-control" for="subscribe-email">Ваш e-mail</label>
             <button class="button button-secondary subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -254,17 +254,17 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link social-vk" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="social-link social-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Группа Вконтакте</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link social-telegram" href="https://t.me/htmlacademy" target="_blank">
+              <a class="social-link social-telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Канал в Телеграм</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Канал в Ютуб</span>
               </a>
             </li>
@@ -276,7 +276,7 @@
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
         </section>
-        <a class="site-author" href="https://htmlacademy.ru/" target="_blank">
+        <a class="site-author" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
           <span class="visually-hidden">Сайт HTML Academy</span>
         </a>
       </footer>
