@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Anton Vakhania](https://up.htmlacademy.ru/htmlcss-individual/2/user/1578123).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/id85590).
+* Сайт: [Мой проект Седона](https://vakhania-av.github.io/sedona-2/).
 
 ---
 
