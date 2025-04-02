@@ -23,7 +23,7 @@ const toggleModal = () => {
   const searchButton = document.querySelector(".search-button"),
         modal = document.querySelector(".modal-container");
 
-  const modalCloseButton = modal.querySelector(".modal-close-button");
+  const modalCloseButton = modal && modal.querySelector(".modal-close-button");
 
   if (!searchButton || !modal || !modalCloseButton) return;
 
