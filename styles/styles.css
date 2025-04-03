@@ -333,7 +333,7 @@ img {
   padding-inline: 70px;
   padding-block: 51px 82px;
   background-color: #a1a0a0;
-  background-image: url("../images/divider.svg"), url("../images/background-1.jpg");
+  background-image: url("../images/divider.svg"), url("../images/sedona-forest.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
   background-position: center bottom, center;
@@ -607,7 +607,7 @@ img {
 }
 
 .subscribe-illustrative {
-  background-image: url("../images/background-2.jpg");
+  background-image: url("../images/sedona-valley.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -854,7 +854,7 @@ img {
 .catalog-filter {
   padding-inline: 70px;
   padding-block: 35px 70px;
-  background-image: url("../images/background-3.jpg");
+  background-image: url("../images/sedona-mountain.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
