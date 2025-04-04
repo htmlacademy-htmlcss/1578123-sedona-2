@@ -988,7 +988,7 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .form-filter-item {
