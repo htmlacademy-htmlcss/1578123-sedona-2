@@ -137,11 +137,11 @@ img {
   overflow-wrap: break-word;
 }
 
-.navigation-link:hover, .navigation-link:focus-visible {
+.navigation-link:not(.button):hover, .navigation-link:focus-visible {
   color: #756257;
 }
 
-.navigation-link:active {
+.navigation-link:not(.button):active {
   color: rgba(117, 98, 87, 0.5);
 }
 
