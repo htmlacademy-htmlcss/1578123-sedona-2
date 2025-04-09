@@ -137,7 +137,7 @@ img {
   overflow-wrap: break-word;
 }
 
-.navigation-link:not(.button):hover, .navigation-link:focus-visible {
+.navigation-link:not(.button):hover, .navigation-link:not(.button):focus-visible {
   color: #756257;
 }
 
