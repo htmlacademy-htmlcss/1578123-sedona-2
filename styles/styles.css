@@ -962,6 +962,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
+  align-items: center;
   color: #ffffff;
 }
 
@@ -1205,8 +1206,8 @@ img {
 .form-filter-buttons {
   display: flex;
   flex-direction: column;
-  align-self: end;
   gap: 32px;
+  padding-top: 56px;
 }
 
 .form-filter-button {
