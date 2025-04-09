@@ -137,6 +137,14 @@ img {
   overflow-wrap: break-word;
 }
 
+.navigation-link:not(.button):hover, .navigation-link:not(.button):focus-visible {
+  color: #756257;
+}
+
+.navigation-link:not(.button):active {
+  color: rgba(117, 98, 87, 0.5);
+}
+
 .navigation-link:hover::after,
 .navigation-link[aria-current="page"]::after {
   content: "";
@@ -958,8 +966,7 @@ img {
 }
 
 .form-filter-group {
-  min-width: 150px;
-  max-width: 480px;
+  max-width: 150px;
   margin: 0;
   padding: 0;
   border: none;
@@ -969,6 +976,11 @@ img {
   margin-right: auto;
 }
 
+.form-filter-group:nth-child(3) {
+  min-width: 150px;
+  max-width: 480px;
+}
+
 .form-filter-list {
   display: flex;
   flex-direction: column;
@@ -976,6 +988,7 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  word-break: break-word;
 }
 
 .form-filter-item {
