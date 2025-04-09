@@ -91,7 +91,7 @@ img {
   width: 140px;
 }
 
-.site-logo:hover {
+.site-logo:hover, .site-logo:focus-visible {
   opacity: 0.9;
 }
 
@@ -193,7 +193,7 @@ img {
   padding: 2px;
 }
 
-.navigation-user-link:not(.button):hover {
+.navigation-user-link:not(.button):hover, .navigation-user-link:not(.button):focus-visible {
   opacity: 0.7;
 }
 
