@@ -1002,10 +1002,12 @@ img {
 .form-filter-title {
   margin-bottom: 32px;
   padding: 0;
+  max-width: 320px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  word-break: break-word;
 }
 
 .form-filter-input {
