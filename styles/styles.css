@@ -1213,7 +1213,7 @@ img {
 
 .form-filter-button {
   min-width: 191px;
-  max-width: 320px;
+  width: 191px;
 }
 
 .filter-button-apply {
